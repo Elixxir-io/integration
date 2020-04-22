@@ -6,7 +6,7 @@ node:
   paths:
     cert: "../keys/cmix.rip.crt"
     key:  "../keys/cmix.rip.key"
-    log:  "server-2.log"
+    log:  "results/server-3.log"
   addresses:
     - "0.0.0.0:11200"
     - "0.0.0.0:11201"
