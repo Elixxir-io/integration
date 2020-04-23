@@ -28,7 +28,7 @@ dbAddress: ""
 
 # Path to JSON file with list of Node registration codes (in order of network 
 # placement)
-RegCodesFilePath: "smokeinfra/regCodes.json"
+RegCodesFilePath: "regCodes.json"
 
 # List of client codes to be added to the database (for testing)
 clientRegCodes:
@@ -62,4 +62,4 @@ groups:
 schedulingAlgorithm: "simple"
 
 # Path to file with config for scheduling algorithem within the user directory 
-schedulingConfigPath: "configurations/registration.json"
+schedulingConfigPath: "registration.json"
