@@ -54,7 +54,7 @@ installbinaries:
     - mkdir -p ~/.elixxir
     - mkdir -p bin
     - cd bin
-    - "DOWNLOADS=\"$SERVER_URL $CLIENT_URL $REGISTRATION_URL $UDB_URL $GATEWAY_URL $GPULIB_URL\""
+    - "DOWNLOADS=\"$SERVER_URL $CLIENT_URL $REGISTRATION_URL $UDB_URL $GATEWAY_URL\""
     - >
       if [ "$CI_BUILD_REF_NAME" == "master" ]; then
         DOWNLOADS=$(echo $DOWNLOADS | sed "s/artifacts\/$DEFAULTBRANCH\/raw/artifacts\/master\/raw/g")
@@ -71,9 +71,9 @@ installbinaries:
     - mv udb.linux64?job=build udb
     - mv registration.linux64?job=build permissioning
     - mv gateway.linux64?job=build gateway
-    - mv libpowmosm75.so?job=build libpowmosm75.so
+    #- mv libpowmosm75.so?job=build libpowmosm75.so
     - mkdir -p /opt/elixxir/lib
-    - cp libpowmosm75.so /opt/elixxir/lib/
+    #- cp libpowmosm75.so /opt/elixxir/lib/
     - "chmod +x *"
     - cd ..
     - bin/server version
