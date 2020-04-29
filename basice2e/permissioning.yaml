@@ -33,6 +33,8 @@ keyPath: "../keys/cmix.rip.key"
 certPath: "../keys/cmix.rip.crt"
 
 ndfOutputPath: "results/permissions-ndfoutput.json"
+# Minimum number of nodes to begin running rounds
+minimumNodes: 5
 
 # === REQUIRED FOR ENABLING TLS ===
 # Path to the private key file
