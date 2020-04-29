@@ -5,7 +5,7 @@
 
 # Run
 pushd basice2e
-./run.sh
+PGPUCMD=$PGPUCMD ./run.sh
 popd
 
 # View result logs
