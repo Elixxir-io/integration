@@ -1,3 +1,5 @@
+# NVIDIA profiling data
+*.qdstrm
 # Ignore Jetbrains IDE folder
 .idea/*
 bin/*

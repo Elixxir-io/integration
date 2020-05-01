@@ -48,7 +48,7 @@ echo "$PERMCMD -- $PIDVAL"
 for SERVERID in $(seq 5 -1 1)
 do
     IDX=$(($SERVERID - 1))
-    SERVERCMD="../bin/server -i $IDX --roundBufferTimeout 300s --config server-$SERVERID.yaml"
+    SERVERCMD="nsys profile -o server-$IDX ../bin/server -i $IDX --roundBufferTimeout 300s --config server-$SERVERID.yaml"
     $SERVERCMD > $SERVERLOGS/server-$SERVERID-console.txt 2>&1 &
     PIDVAL=$!
     echo "$SERVERCMD -- $PIDVAL"
