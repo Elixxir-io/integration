@@ -72,7 +72,7 @@ installbinaries:
 basice2e:
   stage: tests
   tags:
-    - gpu
+    # - gpu
   image: $DOCKER_IMAGE
   script:
     - mkdir -p ~/.elixxir
@@ -88,7 +88,7 @@ basice2e:
     - mkdir -p /opt/xxnetwork/lib
     - cp ../bin/libpowmosm75.so /opt/xxnetwork/lib/
     - cp ../bin/libpow.fatbin /opt/xxnetwork/lib/
-    - sed -i 's/bin\/server/bin\/server-cuda/g' run.sh
+    - sed -i 's/bin\/server/bin\/server-cuda/g' network.sh
     - sed -i 's/useGPU\:\ false/useGPU\:\ true/g' server-[12345].yaml
     - NSYSENABLED=TRUE ./run.sh
     - mv results results-gpu

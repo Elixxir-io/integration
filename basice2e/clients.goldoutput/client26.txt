@@ -10,6 +10,8 @@ Message received: Hello from Josh25, with E2E Encryption
 Message received: Hello from Josh25, with E2E Encryption
 Message received: Hello from Josh25, with E2E Encryption
 Received 0
+Received 0
+Received 0
 Received 5
 Received 5
 Sent: Hello from Jonah26, with E2E Encryption
